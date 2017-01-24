@@ -8,3 +8,8 @@
   margin: auto;
   
 }
+
+.center {
+  margin: inherit;
+  margin-left: 700px;
+}
