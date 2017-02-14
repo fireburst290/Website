@@ -9,8 +9,11 @@
 <body id="story1A" style="background-color: silver; background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/19/Sword_01.svg'); background-repeat: no-repeat; background-position: center top;">
     <script>
     function game() {
-      document.getElementById("id").onclick = ("window.location = 'game.html';");
+      document.getElementById("game").onclick = (clicky);
     }
+      function clicky() {
+        window.location = 'game.html';
+      }
     window.setTimeout(game, 5000);
     
   </script>  
