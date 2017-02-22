@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <meta charset="
+  <meta charset="utf-8" />
 <title> game </title>
 </head>
   <body>
@@ -27,9 +27,11 @@ background-color: lightblue;
       }
       
       function gobyebye_instructions_pizza() {
-      document.getElementById("howtodostuff").style.display = 'none';  
+      document.getElementById("howtodostuff").style.display = 'none';
+        
       }
-     
+     function show_level_1button() {
+       document.getElementById("buttonworks").style.display = 'block';
       
     </script>
     <div id="howtodostuff">
@@ -45,6 +47,7 @@ background-color: lightblue;
       <button type="button" onclick="gobyebye_instructions_pizza();">Get out of here instructions</button>
       <button type="button" id="game">Start level one </button>
       <script>document.getElementById("game").style.display = 'none';</script>
+     
        
     </p>
       
