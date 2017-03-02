@@ -29,9 +29,10 @@ background-color: lightblue;
       function gobyebye_instructions_pizza() {
       document.getElementById("howtodostuff").style.display = 'none';
        document.getElementById("game").style.display = 'initial'; 
-        document.getElementById("mycanvas").style.display = 'none';
+               document.getElementById("mycanvas").style.display = 'initial';
+
          }
-      
+      document.getElementById("mycanvas").style.display = 'none';
     </script>
     <div id="howtodostuff">
     <h2 class="center" > Instructions </h2>
@@ -44,7 +45,6 @@ background-color: lightblue;
       <br>
       <button type="button" onclick="gobyebye_instructions_pizza();">Get out of here instructions</button>
       
-      
   
        
        </p>
@@ -55,6 +55,7 @@ background-color: lightblue;
       <script>document.getElementById("game").style.display = 'none';</script>
      <canvas id="mycanvas" width="200" height="100"
       style="border:1px solid #000000;">
+       
     </canvas>
 </body>
 
