@@ -28,7 +28,7 @@ background-color: lightblue;
       
       function gobyebye_instructions_pizza() {
       document.getElementById("howtodostuff").style.display = 'none';
-               document.getElementById("mycanvas").style.display = 'initial';
+               document.getElementById("myCanvas").style.display = 'initial';
                document.getElementById("game").style.display = 'initial'; 
 
 
@@ -51,13 +51,18 @@ background-color: lightblue;
       
     </div>
     
-     <canvas id="mycanvas" width="1600" height="1600"
+     <canvas id="myCanvas" width="1600" height="1600"
       style="border:1px solid #000000;">
-       
+       Sorry! Your Web Browser Doesn't Support Canvas!! <br>
+       We Use Canvas To Make The Game Work!
     </canvas>
     
     <script>
-            document.getElementById("mycanvas").style.display = 'none';
+   var canvas =
+       document.getElementById("myCanvas");
+      var ctx = canvas.getContext("2d");
+      ctx.fillStyle = "brown";
+            document.getElementById("myCanvas").style.display = 'none';
 
       
     </script>
