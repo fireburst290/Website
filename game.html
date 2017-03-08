@@ -54,6 +54,11 @@ background-color: lightblue;
 
 
          }
+      function changeLevel(level) {
+        document.getElementById("myCanvas")ctx.fillstyle="green"
+
+      }
+      
     </script>
     <div id="howtodostuff">
     <h2 class="center" > Instructions </h2>
@@ -75,13 +80,12 @@ background-color: lightblue;
   
      <canvas id="myCanvas" width="1600" height="1600"
       style="border:1px solid #000000;">
-       <menu id="controls">
-       </menu>
+       
        Sorry! Your Web Browser Doesn't Support Canvas!! <br>
        We Use Canvas To Make The Game Work!
     </canvas>
-      <menu>
-        
+      <menu id="controls">
+        <button type="button" onclick="changeLevel(1);">Level 1</button>
         
   </menu>
       <script>
