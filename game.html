@@ -49,13 +49,15 @@ background-color: lightblue;
       
       function gobyebye_instructions_pizza() {
       document.getElementById("howtodostuff").style.display = "none";
-               document.getElementById("myCanvas").style.display = 'initial';
+      document.getElementById("myCanvas").style.display = 'initial';
               
 
 
          }
       function changeLevel(level) {
-        document.getElementById("myCanvas").canvas.getContext("2d").fillstyle="green";
+        canvas = document.getElementById("myCanvas");
+        ctx = canvas.getContext("2d");
+        ctx.fillstyle="green";
 
       }
       
